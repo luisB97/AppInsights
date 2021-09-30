@@ -10,7 +10,7 @@ using Microsoft.Extensions.Logging;
 namespace app_insights_aspnet_core_quickstart.Pages
 {
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    
+    [IgnoreAntiforgeryToken]
     public class ErrorModel : PageModel
     {
         public string RequestId { get; set; }
